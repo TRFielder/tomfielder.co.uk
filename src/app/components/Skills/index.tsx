@@ -31,12 +31,6 @@ const Skills = () => {
 						alt="TailwindCSS"
 					/>
 					<Image
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
-						width={80}
-						height={80}
-						alt="C Plus Plus"
-					/>
-					<Image
 						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg"
 						width={80}
 						height={80}
@@ -55,10 +49,16 @@ const Skills = () => {
 						alt="MongoDB"
 					/>
 					<Image
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
 						width={80}
 						height={80}
-						alt="Python"
+						alt="C Plus Plus"
+					/>
+					<Image
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tauri/tauri-original.svg"
+						width={80}
+						height={80}
+						alt="Tauri"
 					/>
 				</div>
 			</article>
