@@ -2,7 +2,7 @@ const About = () => {
 	return (
 		<section
 			id="About"
-			className="min-h-screen py-12 md:py-20 bg-gradient-to-b from-gray-900 to-black"
+			className="relative py-12 md:py-20 bg-gradient-to-b from-gray-900 to-black"
 		>
 			<div className="container mx-auto px-4">
 				<article className="max-w-4xl mx-auto bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl border border-gray-700/50">
