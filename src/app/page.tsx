@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<div className="h-screen flex flex-col gap-12 md:justify-evenly">
+			<div className="h-screen flex flex-col md:justify-evenly">
 				<About />
 				<Skills />
 				<Contact />
