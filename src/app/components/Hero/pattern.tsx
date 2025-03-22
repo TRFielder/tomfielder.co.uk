@@ -18,6 +18,30 @@ const Pattern = () => {
 		return { n: 200, distance: 70, d_radius: 150 };
 	};
 
+	// Add a function to create sketchy lines
+	const drawSketchyLine = (
+		ctx: CanvasRenderingContext2D,
+		x1: number,
+		y1: number,
+		x2: number,
+		y2: number,
+		opacity: number
+	) => {
+		ctx.beginPath();
+		ctx.moveTo(x1, y1);
+		ctx.lineTo(x2, y2);
+
+		// Calculate a consistent hue based on the distance between points
+		const distance = Math.hypot(x2 - x1, y2 - y1);
+		const hue = 210 + (distance % 60); // Start at blue (210) and range through to purple (270)
+		const saturation = 85 + (distance % 15); // Consistent saturation
+		const lightness = 50 + (distance % 20); // Slightly higher lightness for better visibility
+
+		ctx.lineWidth = 2;
+		ctx.strokeStyle = `hsla(${hue}, ${saturation}%, ${lightness}%, ${opacity * (0.4 + Math.random() * 0.3)})`;
+		ctx.stroke();
+	};
+
 	useEffect(() => {
 		const { current: canvas } = canvasRef;
 		if (!canvas) return;
@@ -47,7 +71,7 @@ const Pattern = () => {
 			particleRef.current.forEach((dot) => dot.create(ctx, mousePosition, windowSize));
 			particleRef.current.forEach((dot) => dot.animate(canvas.width, canvas.height));
 
-			// Draw connecting lines
+			// Draw connecting lines with sketchy effect
 			for (let i = 0; i < n; i++) {
 				for (let j = i + 1; j < n; j++) {
 					const dotA = particleRef.current[i];
@@ -59,10 +83,6 @@ const Pattern = () => {
 						Math.abs(dotA.x - mousePosition.x) < d_radius &&
 						Math.abs(dotA.y - mousePosition.y) < d_radius
 					) {
-						ctx.beginPath();
-						ctx.moveTo(dotA.x, dotA.y);
-						ctx.lineTo(dotB.x, dotB.y);
-
 						const dotDistance = Math.hypot(
 							dotA.x - mousePosition.x,
 							dotA.y - mousePosition.y
@@ -70,8 +90,7 @@ const Pattern = () => {
 						let distanceRatio = dotDistance / d_radius;
 						distanceRatio = Math.max(distanceRatio - 0.3, 0);
 
-						ctx.strokeStyle = `rgb(0, 128, 0, ${1 - distanceRatio})`;
-						ctx.stroke();
+						drawSketchyLine(ctx, dotA.x, dotA.y, dotB.x, dotB.y, 1 - distanceRatio);
 					}
 				}
 			}

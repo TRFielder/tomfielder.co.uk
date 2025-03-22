@@ -30,9 +30,10 @@ const About = () => {
 								</h4>
 							</div>
 							<p className="text-base md:text-lg text-gray-300 leading-relaxed">
-								I am a software developer with a preference for full-stack web
-								development, but definitely enjoy turning my hand to desktop
-								applications.
+								I'm a software developer who loves building things for the web, from
+								frontend interfaces to backend systems. While web development is my
+								main focus, I also enjoy working on desktop applications where I can
+								dive deeper into system-level programming.
 							</p>
 						</div>
 
@@ -56,11 +57,11 @@ const About = () => {
 								</h4>
 							</div>
 							<p className="text-base md:text-lg text-gray-300 leading-relaxed">
-								You might reasonably ask - how does someone end up working with a
-								web stack and also C++/Rust? The answer lies in needing to adapt to
-								a laboratory with a wide variety of needs my deepest knowledge (and
-								the most fun!) is somewhere at the intersection of those two
-								skillsets
+								My work in a laboratory environment has given me a unique
+								perspective on software development. I work with both modern web
+								technologies and lower-level systems programming, which lets me
+								build solutions that combine the best of both worlds - user-friendly
+								interfaces with powerful backend systems.
 							</p>
 						</div>
 
@@ -84,11 +85,12 @@ const About = () => {
 								</h4>
 							</div>
 							<p className="text-base md:text-lg text-gray-300 leading-relaxed">
-								Currently I'm maintaining a collection of web apps with my
-								full-stack skills using Node, React, and Typescript. I'm also
-								working on modernising a legacy scientific application of critical
-								national importance using Tauri to develop a cutting-edge user
-								interface with good quality low-level systems behind it
+								Right now, I'm working on a mix of web applications using Node.js,
+								React, and TypeScript. I'm also helping modernise an application
+								which controls a scientific instrument of critical national
+								importance using Tauri - it's a great project that lets me combine
+								modern web development with system-level programming to create
+								something really powerful.
 							</p>
 						</div>
 
@@ -110,9 +112,9 @@ const About = () => {
 								<h4 className="text-lg font-semibold text-pink-400">Beyond Code</h4>
 							</div>
 							<p className="text-base md:text-lg text-gray-300 leading-relaxed">
-								Outside that, I'm into building small hobby projects (both software
-								and physical), and pretending I'm good at moving heavy circles at
-								the local gym
+								When I'm not at work, I enjoy building personal projects that mix
+								software and hardware. I'm also passionate about self-improvement
+								after rediscovering the gym a few years ago.
 							</p>
 						</div>
 					</div>
