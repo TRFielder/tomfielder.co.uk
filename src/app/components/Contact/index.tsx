@@ -13,7 +13,7 @@ const Contact = () => {
 					</h3>
 					<div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8">
 						<a
-							href="https://github.com/tomfielder"
+							href="https://github.com/trfielder"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="group"
@@ -35,7 +35,7 @@ const Contact = () => {
 						</a>
 
 						<a
-							href="https://www.linkedin.com/in/tomfielder/"
+							href="https://www.linkedin.com/in/tom-fielder/"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="group"
