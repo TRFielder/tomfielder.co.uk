@@ -8,8 +8,8 @@ export default function Home() {
 		<>
 			<Hero />
 			<div className="h-screen flex flex-col md:justify-evenly">
-				<About />
 				<Skills />
+				<About />
 				<Contact />
 			</div>
 		</>
