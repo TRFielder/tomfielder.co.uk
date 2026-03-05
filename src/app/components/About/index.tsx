@@ -57,16 +57,16 @@ const About = () => {
 								</h4>
 							</div>
 							<p className="text-base md:text-lg text-gray-300 leading-relaxed">
-								My work in a laboratory environment has given me a unique
+								My experience in a laboratory environment has given me a unique
 								perspective on software development. I work with both modern web
 								technologies and lower-level systems programming, which lets me
-								build solutions that combine the best of both worlds - user-friendly
+								build solutions that combine the best of both worlds: user-friendly
 								interfaces with powerful backend systems.
 							</p>
 						</div>
 
-						<div className="transform transition-all duration-300 hover:scale-[1.02] bg-gray-800/20 rounded-xl p-6">
-							<div className="flex items-center gap-3 mb-3">
+						<div className="transform transition-all duration-300 hover:scale-[1.02] bg-gray-800/20 rounded-xl p-6 flex flex-col gap-4">
+							<div className="flex items-center gap-3">
 								<svg
 									className="w-6 h-6 text-indigo-400"
 									fill="none"
@@ -85,12 +85,16 @@ const About = () => {
 								</h4>
 							</div>
 							<p className="text-base md:text-lg text-gray-300 leading-relaxed">
-								Right now, I'm working on a mix of web applications using Node.js,
-								React, and TypeScript. I'm also helping modernise an application
-								which controls a scientific instrument of critical national
-								importance using Tauri - it's a great project that lets me combine
-								modern web development with system-level programming to create
-								something really powerful.
+								I currently work as a frontend developer on a large monorepo
+								powering a multinational pensions and savings platform. The system
+								is a white-label application used by multiple organisations,
+								supporting both employers and employees.
+							</p>
+							<p className="text-base md:text-lg text-gray-300 leading-relaxed">
+								My work focuses building and maintaining React and TypeScript
+								applications, developing shared UI components used across the
+								platform, and migrating features from client-side rendering to
+								server-side rendering using Remix
 							</p>
 						</div>
 
