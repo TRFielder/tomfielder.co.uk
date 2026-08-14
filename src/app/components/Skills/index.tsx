@@ -4,11 +4,11 @@ const Skills = () => {
 	return (
 		<section
 			id="Skills"
-			className="relative py-12 md:py-20 bg-gradient-to-b from-black to-gray-900"
+			className="relative py-12 md:py-20 bg-linear-to-b from-black to-gray-900"
 		>
 			<div className="container mx-auto px-4">
 				<article className="max-w-4xl mx-auto bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl border border-gray-700/50">
-					<h3 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+					<h3 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center bg-linear-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
 						My Tools
 					</h3>
 					<div className="grid grid-cols-3 gap-4 md:gap-8">
